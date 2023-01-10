@@ -1,4 +1,10 @@
 @import "generic/_reset";
 
+@import "settings/_base";
 @import "settings/_colors";
 @import "settings/_fonts";
+@import "settings/_mixins";
+@import "settings/_index";
+
+@import "elements/_footer";
+@import "elements/_header";
