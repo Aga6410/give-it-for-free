@@ -1,0 +1,62 @@
+.homeSteps_container {
+    margin-bottom: 80px;
+    margin-top: 55px;
+    height: 624px;
+    
+    .homeStep {
+        text-align: center;
+        h1 {
+        font-size: 38px;
+        margin-bottom: 31px; 
+    }
+    img {
+        margin-bottom: 35px;
+    }
+}
+   
+.fourSteps {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 325px;
+    background-color: $white;
+    color: $black;
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+    
+
+    .line{
+      margin: 12px auto;
+      background-color: $black;
+      width: 70px;
+      height: 1px;
+    }
+    img {
+      margin: 73px 0 8px 0;;
+    }
+    p {
+        font-size: 16px;
+        line-height: 10px;
+        text-align: center;
+    }
+  }
+  .buttonStep {
+    display: flex;
+    justify-content: center;
+    
+    .stepButton {
+    text-align: center;
+    margin-top: 48px;
+    height: 120px;
+    width: 310px;
+    border-radius: 0.75px solid $black;
+    font-size: 36px;
+    padding: 13px 93px;
+  }
+}
+       
+}

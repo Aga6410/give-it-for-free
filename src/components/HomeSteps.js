@@ -10,23 +10,23 @@ import iconFour from "../assets/Icon-4.svg"
 const HomeSteps = () => {
     return (
         <section id="homeSteps" className='homeSteps_container container'>
-        <div className="homeSteps">
-            <h1>Wystarczą 4 proste kroki</h1>
-            <img src={decoration} alt="decoration"/>
-        </div>
-        <div className="fourSteps">
-            <div className="firstStep">
-                <img src={iconOne} alt="icons"/>
-                <h1>Wybierz rzeczy</h1>
-                <div className="line"></div>
-                <p>ubrania, zabawki, sprzęt i inne</p>
+            <div className="homeStep">
+                <h1>Wystarczą 4 proste kroki</h1>
+                <img src={decoration} alt="decoration"/>
             </div>
-            <div className="secondStep">
-                <img src={iconTwo} alt="icons"/>
+            <div className="fourSteps">
+                <div className="firstStep">
+                    <img src={iconOne} alt="icons"/>
+                    <h1>Wybierz rzeczy</h1>
+                    <div className="line"></div>
+                    <p>ubrania, zabawki, sprzęt i inne</p>
+               </div>
+               <div className="secondStep">
+               <img src={iconTwo} alt="icons"/>
                 <h1>Spakuj je</h1>
                 <div className="line"></div>
                 <p>skorzystaj z worków na śmieci</p>
-            </div>
+                </div>
             <div className="thirdStep">
                 <img src={iconThree} alt="icons"/>
                 <h1>Zdecyduj komu chcesz pomóc</h1>
@@ -39,10 +39,14 @@ const HomeSteps = () => {
                 <div className="line"></div>
                 <p>kurier przyjedzie w dogodnym terminie</p>
             </div>
-        </div>
-        <button className="stepButton">
-            <Link to="/login">ODDAJ RZECZY</Link>
-        </button>
+            </div>
+            <div className='buttonStep'>
+            <button className="stepButton">
+                <Link to="/login" style={{ textDecoration: 'none'}}>ODDAJ RZECZY</Link>
+            </button>
+            </div>
+       
+     
         </section>
     );
 }
