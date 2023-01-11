@@ -1,0 +1,28 @@
+.footer_container {
+    height:24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+     text-align: center;
+     justify-content: flex-end;
+     margin-left: 886px;
+    }
+    .socialmedia {
+      display: flex;
+    
+
+      .facebook {
+        margin-left: 587px;
+        margin-right:30px;
+      }
+      .instagram {
+        margin-right:142px;
+        margin-right: 30px;
+      }
+    }
+    
+
+}

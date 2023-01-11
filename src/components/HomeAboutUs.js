@@ -1,11 +1,12 @@
 import React from "react";
 import decoration from "../assets/Decoration.svg";
 import signature from "../assets/Signature.svg";
+import people from "../assets/People.jpg";
 
 const HomeAboutUs = () => {
 
     return (
-        <section id="aboutUs" className="aboutUs">
+        <section id="aboutUs" className="aboutUs_container container">
             <div className="leftSideAboutUs">
                 <h1>O nas</h1>
                 <img src={decoration} alt="decoration"/> 
@@ -13,6 +14,7 @@ const HomeAboutUs = () => {
                 <img className="signatureImage" src={signature} alt="signature"/>
             </div>
             <div className="rightSideAboutUs">
+                <img src={people} alt="people" style={{height: 938, width: 958}}/> 
             </div>
         </section>
     )

@@ -1,12 +1,18 @@
 @import "mixins";
+@import "fonts";
 
+// html {
+//   font-size: 12px;
+// }
 * {
-  box-sizing:border-box;
-  font-family: 'Open Sans', sans-serif ;
+  box-sizing: border-box;
+}
+body {
+  font-family: $opensans;
 }
 
 .container {
-  width: 1352px;
+  width: 1900px;
   margin: 0 auto;
 
   @include notebook {
