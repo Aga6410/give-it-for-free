@@ -12,7 +12,9 @@ const HomeHeader = () => {
                         <Link to="/register">Załóż konto</Link>
                     </li>    
                 </ul>
-            <ReactScroll/>
+                <ReactScroll/>
+
+
             </div>
         </header> 
             

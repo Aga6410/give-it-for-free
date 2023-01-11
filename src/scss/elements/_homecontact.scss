@@ -1,0 +1,67 @@
+.contact_container {
+    display: flex;
+    margin: 0 auto;
+    height: 1002px;
+    .leftSideImage {
+      width: 65%;
+      opacity: 20%;
+      background-image: url("../../assets/Background-Contact-Form.jpg");
+      background-size: cover;
+    }
+    .rightSideForm {
+      width: 35%;
+      text-align: center;
+      h1 {
+        font-size: 38px;
+        margin: 200px 0 38px 0;
+      }
+      img {
+        width: 253px;
+        height: 33px;
+        margin-bottom: 2rem;
+      }
+    }
+    form {
+      text-align: left;
+      margin-left: 6rem;
+      label {
+        font-size: 16px;
+        display: inline-grid;
+        margin: 0 1rem 1rem 0;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid $black;
+        margin-top: 1rem;
+        outline: 0;
+      }
+      textarea {
+        color: $black;
+        opacity: 20%;
+        border: none;
+        border-bottom: 1px solid $black;
+        margin-top: 1rem;
+        outline: 0;
+        resize: none;
+        font-size: 16px;
+        width: 528px;
+        height: 97px;
+      }
+      .buttonFormSubmit {
+        display: flex;
+        justify-content: flex-end;
+        
+        button {
+        font-size: 18px;
+        padding: 13px 52px;
+        background-color: white;
+        border: 1px solid $black;
+        color: $black;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-right: 37px;
+
+      }
+    }
+    }
+  }
