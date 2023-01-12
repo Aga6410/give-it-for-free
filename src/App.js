@@ -19,15 +19,3 @@ function App() {
 }
 
 export default App;
-
-// import { BrowserRouter } from 'react-router-dom';
-// import Login from "./Login";
-// import Register from "./Register";
-
-// <BrowserRouter>
-// <Routes>
-// <Route path="login" element={Login}/>
-// <Route path="register" element={Register}/>
-
-// </Routes>
-// </BrowserRouter>

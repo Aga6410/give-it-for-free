@@ -1,18 +1,17 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import ReactScroll from "./HomeHeaderReactScroll";
+import HomeReactScroll from "./HomeReactScroll";
+import HomeReactRouter from './HomeReactRouter';
 
 const HomeHeader = () => {
     return (
         <header id ="header" className="header">
             <div className="header_container container">
-                <ul className="header_nav">
-                    <li className="nav_list1">
-                        <Link to="/login">Zaloguj</Link>
-                        <Link to="/register">Załóż konto</Link>
-                    </li>    
+                <ul className="header_nav1">
+                   <HomeReactRouter/>
                 </ul>
-                <ReactScroll/>
+                <ul className="header_nav2">
+                    <HomeReactScroll/> 
+                </ul>     
             </div>
         </header> 
             

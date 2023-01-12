@@ -1,0 +1,15 @@
+.allSide_container {
+    height: 963px;
+    display: flex;
+    .leftSidePhoto {
+      width: 47%;
+      height: 100%;
+      background-image: url("../../assets/Home-Hero-Image.jpg");
+      background-size: cover;
+      background-position: right;
+    }
+  
+    .rightSideIntroduction {
+      width: 53%;
+    }
+  }

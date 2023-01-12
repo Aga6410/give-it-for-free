@@ -1,0 +1,78 @@
+.header_nav1 {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: $grey;
+    a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      font-weight: lighter;
+      &:visited {
+        text-decoration: none;
+        color: #737373;
+      }
+      &:hover {
+        border: 1px solid $yellow;
+      }
+    }
+    span {
+      margin-right: 4rem;
+    }
+  }
+
+  .header_nav2 {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 18px;
+    a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      font-weight: lighter;
+      color: #3C3C3C;
+      &:hover {
+        border: 1px solid $black;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .introduction {
+    text-align: center;
+    margin: 19rem 1rem 0 0;
+    // @media (max-width: 1400px) {
+    //   margin: 10rem 1rem 0 0;
+    // }
+    h1 {
+      font-size: 2rem;
+      color: #3C3C3C;
+      line-height: 55px;
+    } 
+    img {
+      margin: 2rem 0 4rem 0;
+      width: 15rem;
+    }
+    .twoButtons {
+        display: flex;
+        justify-content: space-around;
+        
+       button {
+        height:120px;
+        width:310px;
+        background-color: $white;
+        font-size: 36px;
+        font-weight: lighter;
+        color: $black;
+       }
+       .firstButton {
+        margin-left: 100px;
+       }
+       .secondButton {
+        margin-right: 100px;
+       }
+    }
+}
+  
+  
