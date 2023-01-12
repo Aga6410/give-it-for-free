@@ -4,7 +4,7 @@ import ReactScroll from "./HomeHeaderReactScroll";
 
 const HomeHeader = () => {
     return (
-        <header className="header">
+        <header id ="header" className="header">
             <div className="header_container container">
                 <ul className="header_nav">
                     <li className="nav_list1">
@@ -13,8 +13,6 @@ const HomeHeader = () => {
                     </li>    
                 </ul>
                 <ReactScroll/>
-
-
             </div>
         </header> 
             

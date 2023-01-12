@@ -5,10 +5,11 @@ const ReactScroll = () => {
 
     return (
         <>
-            <Link to="HomeThreeColumns" spy={true} smooth={true} offset={50} duration={1250}>O co chodzi?</Link>
-            <Link to="HomeAboutUs" spy={true} smooth={true} offset={50} duration={1250}>O nas</Link>
-            <Link to="HomeOrganizations" spy={true} smooth={true} offset={50} duration={1250}>Fundacja i organizacje</Link>
-            <Link to="HomeContact" spy={true} smooth={true} offset={50} duration={1250}>Kontakt</Link> 
+            <Link to="header" spy={true} smooth={true} offset={0} duration={1250}>Start</Link>
+            <Link to="threeColumns" spy={true} smooth={true} offset={0} duration={1250}>O co chodzi?</Link>
+            <Link to="aboutUs" spy={true} smooth={true} offset={0} duration={1250}>O nas</Link>
+            <Link to="homeOrganizations" spy={true} smooth={true} offset={0} duration={1250}>Fundacja i organizacje</Link>
+            <Link to="contact" spy={true} smooth={true} offset={0} duration={1250}>Kontakt</Link> 
         </>
     )
 

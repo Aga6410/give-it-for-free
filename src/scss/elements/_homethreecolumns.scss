@@ -1,26 +1,35 @@
 .threeColumns_container {
     background-image: url("../../assets/3ColumnsBackground.png");
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     height: 384px;
     font-weight: 300;
     color: $brown; 
 
     .column {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+
       h1 {
         font-size: 90px;
         margin: 46px 0 10px 0;
+        
       }
       h2 {
         font-size: 18px;
         margin-bottom: 28px;
       }
-      p{
+      p {
         font-size: 16px;
         margin-bottom: 86px;
         line-height: 18px;
         letter-spacing: -0.32px;
+        width: 334px;
+
       }
     }
   }
