@@ -22,13 +22,14 @@
   }
 
   .header_nav2 {
-    text-align: right;
+    text-align: left;
     margin-top: 1rem;
     font-size: 18px;
+    display: flex;
+    justify-content: end;
     a {
       margin-right: 1.5rem;
       text-decoration: none;
-      padding: 0.3rem 0.5rem;
       font-weight: lighter;
       color: #3C3C3C;
       &:hover {

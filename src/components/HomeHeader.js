@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeReactScroll from "./HomeReactScroll";
 import HomeReactRouter from './HomeReactRouter';
+import {Link} from "react-router-dom";
 
 const HomeHeader = () => {
     return (
@@ -10,6 +11,7 @@ const HomeHeader = () => {
                    <HomeReactRouter/>
                 </ul>
                 <ul className="header_nav2">
+                    <Link to="/#">Start</Link>
                     <HomeReactScroll/> 
                 </ul>     
             </div>

@@ -1,8 +1,12 @@
 import React from 'react'
+import HomeHeader from './HomeHeader';
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <>
+    <HomeHeader/>
+    <div>Tu bedzie login</div>
+    </>
   )
 }
 

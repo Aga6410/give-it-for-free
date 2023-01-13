@@ -7,6 +7,8 @@ import HomeAboutUs from "./HomeAboutUs.js";
 import HomeOrganizations from "./HomeOrganizations";
 import HomeContact from "./HomeContact";
 import HomeFooter from "./HomeFooter";
+import OrganizationsList from './OrganizationsList';
+import PaginationApp from "./PaginationApp"
 
 
 const Home = () => {
@@ -17,7 +19,9 @@ const Home = () => {
             <HomeThreeColumns />
             <HomeSteps />
             <HomeAboutUs />
-            <HomeOrganizations />
+            {/* <HomeOrganizations /> */}
+            <OrganizationsList/>
+            {/* <PaginationApp/> */}
             <HomeContact />
             <HomeFooter/>
         </>
