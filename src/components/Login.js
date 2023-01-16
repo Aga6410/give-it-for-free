@@ -2,36 +2,54 @@ import React from 'react'
 import HomeHeader from './HomeHeader';
 import {Link} from "react-router-dom";
 import decoration from "../assets/Decoration.svg"
+import {useState} from 'react';
 
 const Login = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
+  }
+  
+  const handleChangePassword = (e) => {
+    setPassword(e.target.value);
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, password)
+  }
+
   return (
-    <div className="Login">
+    <div className="Login_container container">
       <HomeHeader/>
       <div className="Login__main">
-        <span className="Login__logIn">Zaloguj się</span>
+        <h2 className="Login__logIn">Zaloguj się</h2>
         <img src={decoration} alt="decoration"/>
 
-        <form className="Login__form">
+        <form className="Login__form" onSubmit={handleSubmit}>
           <div className="Login__data">
             <label>
-              Email
+              <span>Email</span>
               <input
-                
+                value={email}
                 type="email"
                 name="email"
                 id="name"
-                
+                onChange={handleChangeEmail}
               />
-            <p ></p>
+            <p className="Login_errorText"></p>
             </label>
             <label>
-              Hasło
+              <span>Hasło</span>
               <input
-                
+                 value={password}
                 type="password"
                 name="password"
                 id="password"
-                
+                onChange={handleChangePassword}
               />
             <p className="Login_errorText"></p>
             </label>
@@ -40,7 +58,8 @@ const Login = () => {
             <Link to="/register" className="btn">
               Załóż konto
             </Link>
-            <input className="btn" type="submit" value="Zaloguj się" />
+            <button className="btn" type="submit">Zaloguj się
+            </button>
           </div>
         </form>
       </div>

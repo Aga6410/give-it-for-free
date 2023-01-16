@@ -1,3 +1,7 @@
+.header_container {
+  padding-top: 2.3rem;
+  padding-right:8.9rem;
+
 .header_nav1 {
     text-align: right;
     margin-top: 1rem;
@@ -26,19 +30,20 @@
     margin-top: 1rem;
     font-size: 18px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     a {
       margin-right: 1.5rem;
       text-decoration: none;
       font-weight: lighter;
       color: #3C3C3C;
+      padding: 0.3rem 0.5rem;
       &:hover {
         border: 1px solid $black;
         cursor: pointer;
       }
     }
   }
-
+}
 
   .introduction {
     text-align: center;

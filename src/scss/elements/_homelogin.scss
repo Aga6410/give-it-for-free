@@ -1,0 +1,98 @@
+.Login_container {
+  padding-top: 2.3rem;
+  padding-right: 8.8rem;
+
+    .Login__main {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 7.7rem;
+
+      h2 {
+        color: $black;
+      }
+      img {
+        height: 2.1rem;
+        margin-bottom: 3.7rem;
+      }
+  
+      .Login__logIn {
+        font-size: 2.5rem;
+        margin-bottom: 4.2rem;
+      }
+      .Login__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: $black;
+        .Login__data {
+          margin-bottom: 3rem;
+          background: $white;
+          display: flex;
+          flex-direction: column;
+          width: 24rem;
+          height: 14.7rem;
+          justify-content: center;
+          padding: 0 5rem;
+          font-size:1rem;
+          .Login_input {
+            border: none;
+            border-bottom: solid 1px $grey;
+            background: $black;
+            padding: 0.3rem 0;
+          }
+          label {
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            text-align: left;
+            &:first-of-type {
+              margin-bottom: 1.5rem;
+            }
+            input {
+              border: none;
+              border-bottom: 1px solid $black;
+              background-color: $white;
+              height: 2.5rem;
+              outline: 0;
+            }
+          }
+        }
+        .Login__btns {
+          display: flex;
+          width: 30rem;
+          justify-content: space-between;
+          
+          .btn {
+            font-size: 1.1rem;
+            border: none;
+            flex-direction: column;
+            background-color: white;
+            padding: 0.55rem 0.75rem;
+            text-decoration: none;
+            color: black;
+          
+            &:hover {
+              border: 1px solid $black;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Login_error {
+    border: none;
+    background: $black;
+    border: none;
+    padding: 0.3rem 0;
+    border-bottom: solid 1px red;
+  }
+  .Login_errorText {
+    color: red;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    height: 1.1rem;
+  }
+  
