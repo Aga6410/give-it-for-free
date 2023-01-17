@@ -1,5 +1,5 @@
 import React from 'react';
-import { projectFirestore } from "./Firebase/config";
+import { projectFirestore } from "../Firebase/config";
 import { useEffect,useState } from 'react';
 import List from './List';
 import Posts from './PaginationPosts';

@@ -3,6 +3,7 @@ import HomeHeader from './HomeHeader';
 import decoration from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
 import {useState} from 'react';
+import { useSignup } from '../Hooks/useSignup'
 
 
 const Register = () => {
@@ -10,6 +11,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [samePassword, setSamePassword] = useState('');
+  const {signup, isPending, error } = useSignup();
 
   const handleChangeEmail = (e) => {
     setEmail(e.target.value);
@@ -25,7 +27,7 @@ const Register = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password, samePassword)
+    signup(email, password, samePassword)
   }
 
   return (
@@ -77,8 +79,10 @@ const Register = () => {
             <Link to="/login" className="btn">
               Zaloguj się
             </Link>
-            <input type="submit" className="btn" value="Załóż konto" />
-          </div>
+            {!isPending && <button  className="btn">Załóż konto</button>}
+            {isPending && <button className="btn" disabled>loading</button>}
+            </div>
+          {error && <p>{error}</p>}
         </form>
       </div>
   </div>   
