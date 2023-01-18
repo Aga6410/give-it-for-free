@@ -81,8 +81,9 @@ const Register = () => {
             </Link>
             {!isPending && <button  className="btn">Załóż konto</button>}
             {isPending && <button className="btn" disabled>loading</button>}
+            {error && <p>{error}</p>}
             </div>
-          {error && <p>{error}</p>}
+          
         </form>
       </div>
   </div>   
