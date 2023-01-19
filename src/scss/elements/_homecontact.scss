@@ -8,6 +8,11 @@
       background-image: url("../../assets/Background-Contact-Form.jpg");
       background-size: cover;
     }
+    .contact_name {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
     .rightSideForm {
       width: 35%;
       text-align: center;
@@ -19,6 +24,7 @@
         width: 253px;
         height: 33px;
         margin-bottom: 2rem;
+        align-items: center;
       }
     }
     form {
@@ -47,21 +53,35 @@
         width: 528px;
         height: 97px;
       }
-      .buttonFormSubmit {
+      .buttonSubmit {
         display: flex;
         justify-content: flex-end;
-        
-        button {
-        font-size: 18px;
-        padding: 13px 52px;
-        background-color: white;
-        border: 1px solid $black;
-        color: $black;
-        cursor: pointer;
-        margin-top: 50px;
-        margin-right: 37px;
-
-      }
+        .buttonFormSubmit {
+          font-size: 18px;
+          padding: 13px 52px;
+          background-color: white;
+          border: 1px solid $black;
+          color: $black;
+          cursor: pointer;
+          margin-top: 50px;
+          margin-right: 37px;
+      }     
     }
     }
+  }
+  .contact_errorText {
+    color: red;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    height: 1.1rem;
+  }
+  .contact__submitInfo {
+    color: green;
+    width:15px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 3rem;
+    align-self: center;
   }
