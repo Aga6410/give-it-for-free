@@ -20,12 +20,15 @@ const HomeHeader = () => {
                      )}
                    
                    {user && (
-                    <>
-                      <li>Hello, {user.email}!</li>
-                      <Link to="/logout">
-                      <button className='btn' onClick={logout}>Wyloguj</button> 
+                    <div className='greatings_logout_buttons'>
+                      <li className='greatings_words'>Hello, {user.email}!</li>
+                      <Link to="/giveaway">
+                      <button className='btn'>Give away</button> 
                       </Link>
-                    </>
+                      <Link to="/logout">
+                      <button className='btn' onClick={logout}>Logout</button> 
+                      </Link>
+                    </div>
                    )}
                 </ul>
                 <ul className="header_nav2">

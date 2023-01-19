@@ -23,6 +23,22 @@
     span {
       margin-right: 4rem;
     }
+    .greatings_logout_buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .btn {
+        background-color: white;
+        border: none;
+        color: $black;
+        text-decoration: none;
+        padding: 0.3rem 0.5rem;
+        font-weight: lighter;
+      }
+      .greatings_words {
+        margin-right: 15px;;
+      }
+    }
   }
 
   .header_nav2 {
@@ -31,6 +47,7 @@
     font-size: 18px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     a {
       margin-right: 1.5rem;
       text-decoration: none;
