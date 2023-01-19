@@ -4,8 +4,7 @@ import { useEffect,useState } from 'react';
 import List from './List';
 import Posts from './PaginationPosts';
 import Pagination from './Pagination';
-
-
+import decoration from "../assets/Decoration.svg"
 
  const OrganizationsList = () => {
     const [data, setData]= useState([]);
@@ -19,8 +18,6 @@ import Pagination from './Pagination';
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const [currentPosts, setCurrentPost] = useState(data.slice(indexOfFirstPost, indexOfLastPost));
-
-  
 
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
@@ -53,15 +50,19 @@ import Pagination from './Pagination';
     }, [data, currentPage]);
 
   return (
-    <div className='OrganizationsList'>
-        <div className="changeOrganizations">
+    <div id="homeOrganizations" className='OrganizationsList_container container'>
+      <div className="whoWeHelp">
+          <h1>Who we help?</h1>
+          <img src={decoration} alt="decoration"/>
+      </div>
+      <div className="changeOrganizations">
             <button 
               onClick={() => setOrg('organizationsdetails')}
             >
-              Fundacjom
+              Foundations
             </button>
-            <button onClick={() => setOrg('organizationdetails2')}>Organizacjom<br/>pozarządowym</button>
-            <button onClick={() => setOrg('organizationdetails3')}>Lokalny<br/>zbiórkom</button>
+            <button onClick={() => setOrg('organizationdetails2')}>Non-governmental <br/>organizations</button>
+            <button onClick={() => setOrg('organizationdetails3')}>Local<br/>collections</button>
         </div>
         {error && <p className='error'>{error}</p>}
         {isPending && <p className='loading'> Loading...</p>}
@@ -72,8 +73,6 @@ import Pagination from './Pagination';
           totalPosts={data.length}
           paginate={paginate}
         />
-
-
     </div>
   )
 }
