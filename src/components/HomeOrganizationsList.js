@@ -1,13 +1,13 @@
 import React from 'react';
 import { projectFirestore } from "../Firebase/config";
 import { useEffect,useState } from 'react';
-import List from './List';
 import Posts from './PaginationPosts';
 import Pagination from './Pagination';
 import decoration from "../assets/Decoration.svg"
 
  const OrganizationsList = () => {
     const [data, setData]= useState([]);
+    const [totalPosts, setTotalPosts] = useState(0);
     const [isPending, setIsPending] = useState(false);
     const [error, setError] = useState(false); 
     const [org, setOrg] = useState('organizationsdetails');
@@ -17,7 +17,7 @@ import decoration from "../assets/Decoration.svg"
         // Get current
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const [currentPosts, setCurrentPost] = useState(data.slice(indexOfFirstPost, indexOfLastPost));
+    const [currentPosts, setCurrentPost] = useState(data.slice(0+(3*currentPage), 3+(3*currentPage)));
 
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
@@ -36,6 +36,7 @@ import decoration from "../assets/Decoration.svg"
           })
           setData(results)
           setIsPending(false)
+          setTotalPosts(results.length)
         }
 
         }).catch(err => {
@@ -46,7 +47,7 @@ import decoration from "../assets/Decoration.svg"
     },[org])
 
     useEffect(() =>  {
-      setCurrentPost(data.slice(0+(3*currentPage), 2+(3*currentPage)));
+      setCurrentPost(data.slice(0+(3*currentPage), 3+(3*currentPage)));
     }, [data, currentPage]);
 
   return (
@@ -66,11 +67,11 @@ import decoration from "../assets/Decoration.svg"
         </div>
         {error && <p className='error'>{error}</p>}
         {isPending && <p className='loading'> Loading...</p>}
-        {data && <List organization={data} />}
+        {/* {data && <List organization={data} />} */}
         <Posts posts={currentPosts} loading={loading} />
         <Pagination
           postsPerPage={postsPerPage}
-          totalPosts={data.length}
+          totalPosts={totalPosts}
           paginate={paginate}
         />
     </div>

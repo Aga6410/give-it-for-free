@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
-  const pageNumbers = [];
+  const [pageNumbers, setPageNumbers] = useState([]);
 
-  for (let i = 0; i <= Math.ceil(totalPosts / postsPerPage); i++) {
-    pageNumbers.push(i);
-  }
+  useEffect(() => {
+    const tempTab = [];
+    for (let i = 0; i < Math.ceil(totalPosts / postsPerPage); i++) {
+      tempTab.push(i);
+    }
+    console.log({totalPosts,tempTab, postsPerPage});
+    setPageNumbers(tempTab);
+  }, [totalPosts]) 
+
 
   return (
-    <nav>
+    (totalPosts > postsPerPage) && <nav>
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
@@ -17,7 +23,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
               paginate(number)}} 
               href='#' 
               className='page-link'>
-              {number}
+              {number+1}
             </a>
           </li>
         ))}

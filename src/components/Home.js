@@ -4,11 +4,9 @@ import HomeTitle from "./HomeTitle";
 import HomeThreeColumns from "./HomeThreeColumns"
 import HomeSteps from "./HomeSteps";
 import HomeAboutUs from "./HomeAboutUs.js";
-import HomeOrganizations from "./HomeOrganizations";
 import HomeContact from "./HomeContact";
 import HomeFooter from "./HomeFooter";
-import OrganizationsList from './OrganizationsList';
-import PaginationApp from "./PaginationApp"
+import HomeOrganizationsList from './HomeOrganizationsList';
 
 
 const Home = () => {
@@ -19,9 +17,7 @@ const Home = () => {
             <HomeThreeColumns />
             <HomeSteps />
             <HomeAboutUs />
-            {/* <HomeOrganizations /> */}
-            <OrganizationsList/>
-            {/* <PaginationApp/> */}
+            <HomeOrganizationsList/>
             <HomeContact />
             <HomeFooter/>
         </>
