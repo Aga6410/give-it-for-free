@@ -1,11 +1,11 @@
 .OrganizationsList_container {
-    .articleP {
-      text-align: center;
-      width: 30%;
-      margin: 2rem auto;
-      font-size: 1rem;
-      line-height: 1.4rem;
-    }
+    // .articleP {
+    //   text-align: center;
+    //   width: 30%;
+    //   margin: 2rem auto;
+    //   font-size: 1rem;
+    //   line-height: 1.4rem;
+    // }
     .whoWeHelp {
       text-align: center;
       h1 {
@@ -21,17 +21,53 @@
       margin-top: 3rem;
       display: flex;
       justify-content: center;
+      align-items: center;
       button {
-        margin: 0 2rem;
-        font-size: 1.2rem;
-        font-weight: lighter;
-        background-color: white;
+      font-size: 1.5rem;
+      border: none;
+      text-decoration: none;
+      width: 13rem;
+      height: 5rem;
+      font-weight: lighter;
+      background-color: white;
+      margin-right: 1.5rem;
+      color: #3C3C3C;
+      padding: 0.3rem 0.5rem;
+      &:hover {
+        border: 1px solid $black;
         cursor: pointer;
-        padding: 1rem;
-        outline: 0;
+      }
+    }
+    }
+    .description { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    p {
+      width: 40rem;
+      height: 5.8rem;
+      margin-top: 4.3rem;
+      margin-bottom: 4.1rem;
+      font-size: 1.4rem;
+    } 
+  }
+  .list-group {
+    background-color: red;
+    .list-group-item {
+      color:blue;
+      h2 {
+        background-color: orange;
       }
     }
   }
+  
+    
+  }
+  
+
+
+ 
   // First div info
   
   .firstDivInfo>div {

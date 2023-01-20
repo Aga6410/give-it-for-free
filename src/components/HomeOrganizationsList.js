@@ -5,7 +5,7 @@ import Posts from './PaginationPosts';
 import Pagination from './Pagination';
 import decoration from "../assets/Decoration.svg"
 
- const OrganizationsList = () => {
+ const HomeOrganizationsList = () => {
     const [data, setData]= useState([]);
     const [totalPosts, setTotalPosts] = useState(0);
     const [isPending, setIsPending] = useState(false);
@@ -57,14 +57,13 @@ import decoration from "../assets/Decoration.svg"
           <img src={decoration} alt="decoration"/>
       </div>
       <div className="changeOrganizations">
-            <button 
-              onClick={() => setOrg('organizationsdetails')}
-            >
-              Foundations
-            </button>
-            <button onClick={() => setOrg('organizationdetails2')}>Non-governmental <br/>organizations</button>
-            <button onClick={() => setOrg('organizationdetails3')}>Local<br/>collections</button>
-        </div>
+          <button onClick={() => setOrg('organizationsdetails')}>Foundations</button>
+          <button onClick={() => setOrg('organizationdetails2')}>Organizations</button>
+          <button onClick={() => setOrg('organizationdetails3')}>Local<br/>collections</button>     
+      </div>
+      <div className='description'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
         {error && <p className='error'>{error}</p>}
         {isPending && <p className='loading'> Loading...</p>}
         {/* {data && <List organization={data} />} */}
@@ -78,4 +77,4 @@ import decoration from "../assets/Decoration.svg"
   )
 }
 
-export default OrganizationsList;
+export default HomeOrganizationsList;
