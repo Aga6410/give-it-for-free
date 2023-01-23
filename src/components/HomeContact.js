@@ -1,5 +1,4 @@
-import ReactDOM from "react-dom";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import decoration from "../assets/Decoration.svg";
 
 function HomeContact() {

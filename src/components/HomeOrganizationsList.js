@@ -1,6 +1,6 @@
 import React from 'react';
 import { projectFirestore } from "../Firebase/config";
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 import Posts from './PaginationPosts';
 import Pagination from './Pagination';
 import decoration from "../assets/Decoration.svg"
@@ -16,7 +16,7 @@ import decoration from "../assets/Decoration.svg"
     const [postsPerPage] = useState(3);
         // Get current
     const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    // const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const [currentPosts, setCurrentPost] = useState(data.slice(0+(3*currentPage), 3+(3*currentPage)));
 
   // Change page
