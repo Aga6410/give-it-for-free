@@ -1,0 +1,58 @@
+.StepsToDo_container {
+
+  
+      background-image: url("../../assets/Background-Form.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: 5rem;
+      background-position-x: -4rem;
+      height: 85vh;
+      
+      .importantInformation {
+        background-color: #FAD648;
+        height: 11.1rem;
+        h1 {
+          font-size: 2.2rem;
+          font-weight: bold;
+          padding: 3rem 0 0 8.8rem;
+        }
+        p {
+          padding: 1rem 0 2rem 8.8rem;
+          font-size: 1.4rem;
+          color: $black;
+        }
+      }
+  
+      .step {
+        padding: 1rem 0 2rem 5rem;
+        p{
+          margin: 1rem 0 2rem 0;
+          font-weight: lighter;
+        }
+        h1 {
+          font-size: 1.4rem;
+          font-weight: bold;
+          margin-bottom: 3rem;
+        }
+        label {
+          margin: 0 0 1rem 1.5rem;
+          font-weight: lighter;
+        }
+        input {
+          margin-bottom: 1.5rem;
+          }
+        }
+        button {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: black;
+            font-size: 0.8rem;
+            border: 1px solid black;
+            font-weight: lighter;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+            margin-top: 8rem;
+            background-color: #80808000;
+            outline: 0;  
+    }
+}
