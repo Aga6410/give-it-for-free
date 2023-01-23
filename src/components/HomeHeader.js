@@ -22,7 +22,7 @@ const HomeHeader = () => {
                    {user && (
                     <div className='greatings_logout_buttons'>
                       <li className='greatings_words'>Hello, {user.email}!</li>
-                      <Link to="/giveaway">
+                      <Link to="/form">
                       <button className='btn'>Give away</button> 
                       </Link>
                       <Link to="/logout">

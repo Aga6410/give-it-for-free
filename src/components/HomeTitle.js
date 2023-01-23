@@ -10,14 +10,14 @@ const HomeTitle = () => {
         </div>
         <div className="rightSideIntroduction">
             <div className='introduction'>
-                <h1>Zacznij pomagać!<br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
+                <h1>Start to help<br/>Give away things to worthwhile organisations!</h1>
                 <img src={decoration} alt="decoration"/>
                 <div className='twoButtons'>
                     <button className="firstButton">
-                        <Link to="/login" style={{ textDecoration: 'none'}}>ODDAJ <br/> RZECZY</Link>
+                        <Link to="/login" style={{ textDecoration: 'none'}}>GIVE AWAY<br/>THINGS</Link>
                     </button>
                     <button className="secondButton">
-                        <Link to="/" style={{ textDecoration: 'none'}}>ZORGANIZUJ ZBIÓRKĘ</Link>
+                        <Link to="/" style={{ textDecoration: 'none'}}>ORGANIZE COLLECTION</Link>
                     </button>
                 </div>
             </div>

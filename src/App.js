@@ -7,9 +7,9 @@ import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
 import Logout from "./components/Logout/Logout"
-import GiveBack from './components/Giveback/GiveAway';
+import FormAfterLogin from './components/FormAfterLogin/FormAfterLogin';
 import "./scss/main.scss";
-import GiveAway from './components/Giveback/GiveAway';
+
 
 function App() {
   const { authIsReady } = useAuthContext()
@@ -23,7 +23,7 @@ function App() {
              <Route path="login" element={<Login/>}/>
              <Route path="register" element={<Register/>}/>
              <Route path="logout" element={<Logout/>}/>
-             <Route path="giveaway" element={<GiveAway/>}/>
+             <Route path="form" element={<FormAfterLogin/>}/>
           </Routes>
         </BrowserRouter>
       )}

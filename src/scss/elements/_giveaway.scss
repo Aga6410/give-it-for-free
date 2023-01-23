@@ -1,0 +1,78 @@
+.giveAway_container {
+  height: 53rem;
+  display: flex;
+ .allSideProject {
+    width: 100%;
+    display: flex;
+    .leftSideProject {
+      width: 50%;
+      height: 100%;
+      background-image: url("../../assets/Form-Hero-Image.jpg");
+      background-size: cover;
+      background-position: right;
+    }
+    .rightSideProject {
+      width: 50%;
+    }
+  }
+}
+  
+  .headerProject {
+    text-align: center;
+    margin: 6rem 5rem 0 0;
+    h1 {
+      font-size: 2.3rem;
+      color: $black;
+      line-height: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: lighter;
+    }
+   
+    img {
+      margin: 2rem 0 2rem 0;
+      width: 11rem;
+    }
+    .decorationImage {
+      background-image: url("../../assets/Decoration.svg");
+      width: 15rem;
+      height: 2rem;
+      background-position: center;
+    }
+    .stepsToFollow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    .firstStep {
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        border: 1px solid $black;
+        width: 8.3rem;
+        height: 8.3rem;
+        transform: rotate(45deg);
+        
+    h3 {
+        transform: rotate(-45deg);
+        padding-right: 4rem;
+        color: $black;
+        padding-right: 5rem;
+        font-size: 1.6rem;
+      }
+    p {
+        transform: rotate(-45deg);
+        padding-right: 1.0rem;
+        padding-top: 2rem;
+        color: $black;
+        font-size: 1.1rem;
+      }
+    }
+    }
+    }
+  
+ 
+  
+  
