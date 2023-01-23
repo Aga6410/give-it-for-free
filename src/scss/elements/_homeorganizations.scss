@@ -50,24 +50,61 @@
       margin-top: 4.3rem;
       margin-bottom: 4.1rem;
       font-size: 1.4rem;
+      line-height: 30px;
     } 
   }
-  .list-group {
-    background-color: red;
-    .list-group-item {
-      color:blue;
-      h2 {
-        background-color: orange;
+  .list-group-item {
+    font-family: $merriweather;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1.9rem;
+    padding-top: 2.1rem;
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+      margin-top: 1rem;
+      font-weight: lighter;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+
+    }
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page-item {
+      text-align: center;
+      margin-right: 1.5rem;
+      margin-top: 3.9rem;
+     
+      padding: 0.8rem 0.9rem;
+      &:hover {
+        border: 1px solid $black;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
       }
     }
-  }
-  
     
   }
   
 
-
- 
+  
   // First div info
   
   .firstDivInfo>div {

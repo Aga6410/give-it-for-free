@@ -57,11 +57,14 @@ import decoration from "../assets/Decoration.svg"
           <img src={decoration} alt="decoration"/>
       </div>
       <div className="changeOrganizations">
-          <button onClick={() => setOrg('organizationsdetails')}>Foundations</button>
-          <button onClick={() => setOrg('organizationdetails2')}>Organizations</button>
+          <button onClick={() => setOrg('organizationdetails2')}>Foundations</button>
+          <button onClick={() => setOrg('organizationsdetails')}>Organizations</button>
           <button onClick={() => setOrg('organizationdetails3')}>Local<br/>collections</button>     
       </div>
       <div className='description'>
+      {/* {error && <p className='error'>{error}</p>}
+        {isPending && <p className='loading'> Loading...</p>}
+         setOrg ={organizationdetails2.desc}  */}
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
       </div>
         {error && <p className='error'>{error}</p>}
