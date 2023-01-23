@@ -49,7 +49,7 @@
 //   const validate = () => {
 
 //     const err = {};
-//     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+//     const re = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
 //     if (!re.test(form.email)) {
 //       err.email = "The email is badly formated!";
