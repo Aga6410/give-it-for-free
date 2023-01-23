@@ -14,10 +14,10 @@ const HomeTitle = () => {
                 <img src={decoration} alt="decoration"/>
                 <div className='twoButtons'>
                     <button className="firstButton">
-                        <Link to="/login" style={{ textDecoration: 'none'}}>GIVE AWAY<br/>THINGS</Link>
+                        <Link to="/register" style={{ textDecoration: 'none'}}>GIVE AWAY<br/>THINGS</Link>
                     </button>
                     <button className="secondButton">
-                        <Link to="/" style={{ textDecoration: 'none'}}>ORGANIZE COLLECTION</Link>
+                        <Link to="/register" style={{ textDecoration: 'none'}}>ORGANIZE COLLECTION</Link>
                     </button>
                 </div>
             </div>
