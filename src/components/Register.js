@@ -172,7 +172,7 @@ const Register = () => {
     <div className="Register_container container">
       <HomeHeader/>
       <div className="Register__main">
-        <span className="Register__logIn">Załóż konto</span>
+        <span className="Register__logIn">Sign in</span>
         <img src={decoration} alt="decoration"/>
         <form className="Register__form" onSubmit={handleSubmit}>
           <div className="Register__data">
@@ -189,7 +189,7 @@ const Register = () => {
             <span className="Register_errorText"></span>
             </label>
             <label>
-              Hasło
+              Password
               <input
               // className={!errors.password ? "Register__input" : "Register_error"}
               type="password"
@@ -200,7 +200,7 @@ const Register = () => {
             <span className="Register_errorText"></span>
             </label>
             <label>
-              Powtórz hasło
+              Repeat password
               <input
               // className={!errors.passwordRep ? "Register__input" : "Register_error"}
               value={samePassword}
@@ -215,9 +215,9 @@ const Register = () => {
           </div>
           <div className="Register__btns">
             <Link to="/login" className="btn">
-              Zaloguj się
+              Login in
             </Link>
-            {!isPending && <button  className="btn">Załóż konto</button>}
+            {!isPending && <button  className="btn">Sign in</button>}
             {isPending && <button className="btn" disabled>loading</button>}
             {error && <p>{error}</p>}
             </div>

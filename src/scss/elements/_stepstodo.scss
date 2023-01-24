@@ -116,5 +116,75 @@
         padding-top: 1.2rem;
        }
 
+       .textareaToFillIn {
+        display: flex;
+        flex-direction: column;
+       }
     }
+    .pickupAddress {
+      display: flex;
+      .firstColumn {
+        margin-right: 2rem;
+      }
+      .columnAd {
+        text-align: right;
+        label {
+          margin-right: 1rem;
+          outline: 0;
+        }
+        p{
+          margin-right: 1rem;
+          outline: 0;
+        }
+        h2 {
+          margin: 0.5rem 1rem 2rem 0;
+          text-align: left;
+        }
+      }
+  
+    }
+  
+}
+.thirdStep {
+  .checkbox_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 28rem;
+  
+ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 10px;
+  float: left;
+}
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  margin-bottom: 10px;
+}
+input[type="checkbox"]:checked + label {
+  border: 1px solid $black;
+  background-color: $yellow;
+}
+label {
+  font-size: 1.2rem;
+  color: $black;
+}
+}
 }

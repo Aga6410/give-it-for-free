@@ -74,30 +74,72 @@ export default function StepsToDo() {
             <option>Katowice</option>
           </select>
           <h5>Who do you want to help?</h5><br/>
-          <label >children
-            <input type="checkbox" value="dzieciom"  />
-          </label>
-          <label>single mother
-            <input type="checkbox" value="samotnym matkom" />
-          </label>
-          <label >homeless
-            <input type="checkbox" value="bezdomnym" />
-          </label><br/>
-          <label >handicapped
-            <input type="checkbox" value="niepełnosprawnym"/>
-          </label>
-          <label>elderly people
-            <input type="checkbox" value="osobom starszym" />
-          </label>
-          <h5>Fill in the name of organization (optionally)</h5>
-          <textarea></textarea>
-                      
+          <ul className='checkbox_list'>
+            <li>
+              <input type="checkbox" id="check_1" value="children"  />
+              <label for="check_1">children </label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_2"  value="single mother" />
+              <label for="check_2">single mother</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_3"  value="homeless" />
+              <label for="check_3">homeless</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_4"  value="handicapped"/>
+              <label for="check_4">handicapped </label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_5" value="elderly people" />
+              <label for="check_5">elderly people </label>
+            </li>
+          </ul>
+          <div className='textareaToFillIn'>
+            <h5>Fill in the name of organization (optionally)</h5>
+            <textarea></textarea>
+          </div>         
         </div>           
         <div className='buttonsBackNext'>
           <button>Back</button>      
           <button>Next</button>
         </div>    
       
+        <div className="importantInformation">
+          <h1>Important!</h1>
+          <p>Fill in the address and date of pickup by courier.</p>
+        </div>    
+        <div className="fourthStep step">
+          <p>Step 4/4</p>
+          <h1>Fill in the address and date of pickup by courier</h1>
+          <div className="pickupAddress">
+            <div className="fitstColumn columnAd">
+              <h2>Address of pickup:</h2>
+              <label>Street:</label>
+              <input type="text" name="street"/><br/>
+              <label>City:</label>
+              <input type="text"  name="city"/><br/>
+              <label>Post code:</label>
+              <input type="text" name="postCode"/><br/>
+              <label>Phone number:</label>
+              <input type="text" name="phone"/><br/>
+            </div>
+            <div className="secondColumn columnAd">
+              <h2>Date of pickup:</h2>
+              <label>Date:</label>
+              <input type="text" name="date"/><br/>
+              <label>Time:</label>
+              <input type="text"  name="hour"/><br/>
+              <label>Comments:</label>
+              <input type="text" name="moreInfo"/><br/>
+            </div>
+          </div>
+        </div>
+        <div className='buttonsBackNext'>
+          <button>Back</button>      
+          <button>Next</button>
+        </div> 
                 
 
     </div>
