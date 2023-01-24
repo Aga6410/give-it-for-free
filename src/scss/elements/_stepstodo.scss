@@ -1,58 +1,120 @@
 .StepsToDo_container {
+  background-image: url("../../assets/Background-Form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 6rem;
+  // height: 55.2rem;
+  width: 118.7rem;
 
-  
-      background-image: url("../../assets/Background-Form.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: 5rem;
-      background-position-x: -4rem;
-      height: 85vh;
-      
-      .importantInformation {
-        background-color: #FAD648;
-        height: 11.1rem;
-        h1 {
-          font-size: 2.2rem;
-          font-weight: bold;
-          padding: 3rem 0 0 8.8rem;
-        }
-        p {
-          padding: 1rem 0 2rem 8.8rem;
-          font-size: 1.4rem;
-          color: $black;
-        }
+  .importantInformation {
+    background-color: $yellow;
+    height: 11.1rem;
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      padding: 3rem 0 0 8.8rem;
+    }
+    p {
+      padding: 1rem 0 2rem 8.8rem;
+      font-size: 1.4rem;
+      color: $black;
+    }
+  }
+  .step {
+    padding: 1rem 0 2rem 8.8rem;
+   
+    p {
+      margin: 1rem 0 4.3rem 0;
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 2.3rem;
+    }
+    .formula{
+      display: flex;
+      flex-direction: column;
+   
+    label {
+      margin: 1.1rem 0 1rem 1.5rem;
+      font-weight: lighter;
+      font-size: 1.5rem;
+     
+      input[type=radio] {
+        padding: 0.5em;
+        -webkit-appearance: none;
+        outline: 0.1rem solid black;
+        outline-offset: 0.1rem;
+        
       }
+      input[type=radio]:checked {
+        display: inline-block;
+        background-color: $yellow;
+      }
+      span {
+        margin: 1.5rem;
+      }
+    }
+  }
   
-      .step {
-        padding: 1rem 0 2rem 5rem;
-        p{
-          margin: 1rem 0 2rem 0;
-          font-weight: lighter;
-        }
-        h1 {
-          font-size: 1.4rem;
-          font-weight: bold;
-          margin-bottom: 3rem;
-        }
-        label {
-          margin: 0 0 1rem 1.5rem;
-          font-weight: lighter;
-        }
-        input {
-          margin-bottom: 1.5rem;
-          }
-        }
-        button {
-            padding: 1rem 2rem;
-            text-decoration: none;
-            color: black;
-            font-size: 0.8rem;
-            border: 1px solid black;
-            font-weight: lighter;
-            font-family: "Open Sans", sans-serif;
-            cursor: pointer;
-            margin-top: 8rem;
-            background-color: #80808000;
-            outline: 0;  
+  }
+  button {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    font-weight: lighter;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #EFEDE9;
+    outline: 0;  
+    margin-left: 8.8rem;
+    }
+    .secondStep {
+      font-size:1.5rem;
+      margin-bottom: 10rem;
+      label {
+        padding-right: 1rem;
+      }
+      select {
+       font-size: 1.5rem;
+       width: 15rem;
+        text-align: center;
+        border: 1px solid black;
+        padding: 0.5rem 1rem;
+        background-color: #EFEDE9;
+      }
+    }
+    .thirdStep {
+      select {
+        font-size: 1.5rem;
+        width: 15rem;
+         text-align: center;
+         border: 1px solid black;
+         padding: 0.5rem 1rem;
+         background-color: #EFEDE9;
+       }
+      //  label {
+      //   border: 1px solid;
+      //   padding: 0.5rem 1rem;
+      // }
+       textarea {
+        background-color: #EFEDE9;
+        resize: none;
+        width: 22rem;
+       }
+
+       h5 {
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 1.2rem;
+        padding-top: 1.2rem;
+       }
+
     }
 }
