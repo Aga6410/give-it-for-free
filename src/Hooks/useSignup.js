@@ -24,6 +24,9 @@ export const useSignup = () => {
           //dispatch login action
           dispatch({type: 'LOGIN', payload: res.user })
 
+          //add display name to user 
+          //await res.user.updateProfile({passwordRep})
+
 
          //update state
            if (!isCancelled) {

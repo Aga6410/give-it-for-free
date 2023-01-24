@@ -145,7 +145,7 @@ const Login = () => {
     <div className="Login_container container">
       <HomeHeader/>
       <div className="Login__main">
-        <h2 className="Login__logIn">Zaloguj się</h2>
+        <h2 className="Login__logIn">Login</h2>
         <img src={decoration} alt="decoration"/>
 
         <form className="Login__form" onSubmit={handleSubmit}>
@@ -162,7 +162,7 @@ const Login = () => {
             <p className="Login_errorText"></p>
             </label>
             <label>
-              <span>Hasło</span>
+              <span>Password</span>
               <input
                  value={password}
                 type="password"
@@ -175,9 +175,9 @@ const Login = () => {
           </div>
           <div className="Login__btns">
             <Link to="/register" className="btn">
-              Załóż konto
+              Sign in
             </Link>
-            {!isPending && <button className="btn" >Zaloguj się</button>}
+            {!isPending && <button className="btn" >Login</button>}
             {isPending && <button className = "btn" disabled>Loading</button>}
             {error && <p>{error}</p> }
           </div>

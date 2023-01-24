@@ -9,9 +9,9 @@ export default function LogOut() {
         <>
             <HomeHeader/>
             <div className="logout_container container">
-                <h1>Wylogowanie nastąpiło<br/>pomyślnie!</h1>
+                <h1>Logged out<br/>successfully!</h1>
                 <img src={decoration} alt="decoration"/>
-                <Link to='/'>Strona główna</Link>
+                <Link to='/'>Home page</Link>
             </div>
         </>
     )
