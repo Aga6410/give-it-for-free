@@ -123,26 +123,99 @@
     }
     .pickupAddress {
       display: flex;
+      justify-content: space-between;
+      width: 58.5rem;
+      
       .firstColumn {
-        margin-right: 2rem;
+      
+        
       }
       .columnAd {
         text-align: right;
+        
         label {
           margin-right: 1rem;
           outline: 0;
+          text-align: right;
+          font-size: 1.5rem;
         }
-        p{
+        p {
           margin-right: 1rem;
           outline: 0;
         }
         h2 {
           margin: 0.5rem 1rem 2rem 0;
           text-align: left;
+          font-weight: bold;
+          font-size: 1.5rem;
         }
+        input {
+          margin-bottom: 1rem;
+          background-color: #EFEDE9;
+          height: 2.5rem;
+          align-items: right;
+        }
+        textarea {
+          resize: none;
+          background-color: #EFEDE9;
+          height: 2.5rem;
+        }
+        
       }
   
     }
+    .lastInfo {
+      margin-left: 8.9rem;
+     
+      h1 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding: 3rem 0 3rem 5rem;
+      }
+      p {
+        padding: 1rem 0 2rem 5rem;
+      }
+    }
+
+.summaryInformation {
+  margin-left: 8.9rem;
+  h2 {
+    margin: 0.5rem 1rem 2rem 3rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  p{
+    margin: 0 0 2rem 6rem;
+  }
+  img {
+    width: 2rem;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+  }
+  .iconTwo {
+    width: 2rem;
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+  }
+  .firstColumn {
+    margin-right: 2rem;
+  }
+  .allColumnSummary{
+    display: flex;
+  }
+  .columnAd {
+    p{
+      margin-right: 1rem;
+      outline: 0;
+    }
+    h2 {
+
+    }
+  }
+}
   
 }
 .thirdStep {

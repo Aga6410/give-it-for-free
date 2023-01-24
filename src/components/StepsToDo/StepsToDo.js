@@ -1,4 +1,6 @@
 import React from 'react'
+import icon1 from '../../assets/Icon-1.svg'
+import icon2 from '../../assets/Icon-4.svg'
 
 export default function StepsToDo() {
   return (
@@ -114,8 +116,9 @@ export default function StepsToDo() {
           <p>Step 4/4</p>
           <h1>Fill in the address and date of pickup by courier</h1>
           <div className="pickupAddress">
-            <div className="fitstColumn columnAd">
+            <div className="firstColumn columnAd">
               <h2>Address of pickup:</h2>
+              <div>
               <label>Street:</label>
               <input type="text" name="street"/><br/>
               <label>City:</label>
@@ -124,15 +127,16 @@ export default function StepsToDo() {
               <input type="text" name="postCode"/><br/>
               <label>Phone number:</label>
               <input type="text" name="phone"/><br/>
+              </div>
             </div>
             <div className="secondColumn columnAd">
               <h2>Date of pickup:</h2>
               <label>Date:</label>
-              <input type="text" name="date"/><br/>
+              <input type="date" name="date"/><br/>
               <label>Time:</label>
-              <input type="text"  name="hour"/><br/>
+              <input type="time"  name="hour"/><br/>
               <label>Comments:</label>
-              <input type="text" name="moreInfo"/><br/>
+              <textarea type="note" name="moreInfo"/><br/>
             </div>
           </div>
         </div>
@@ -140,8 +144,36 @@ export default function StepsToDo() {
           <button>Back</button>      
           <button>Next</button>
         </div> 
-                
 
+        <div className="lastInfo">
+                            <h1>Summary of you donation</h1>
+                        </div>
+                    <div className="summaryInformation">
+                        <div className="summary">
+                            <img src={icon1} alt="icon"/><h2>You give:</h2>
+                            <p> bags </p>
+                            <img src={icon2} className="iconTwo" alt="icon"/><p>localisation: </p>
+                        </div>
+                        <div className="allColumnSummary">
+                            <div className="fitstColumn columnAd">
+                                <h2>Adrress of pickup: </h2>
+                                <p>Street: </p>
+                                <p>City: </p>
+                                <p>Post code: </p>
+                                <p>Phone number: </p>
+                            </div>
+                            <div className="secondColumn columnAd">
+                                <h2>Date of pickup: </h2>
+                                <p>Date: </p>
+                                <p>Time: </p>
+                                <p>Comments:</p>
+                            </div>
+                        </div>     
+                        </div> 
+                        <div className='buttonsBackNext'>
+          <button>Back</button>      
+          <button>Accept</button>
+        </div> 
     </div>
   )
 }
