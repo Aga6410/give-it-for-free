@@ -11,11 +11,11 @@ import decoration from "../assets/Decoration.svg"
     const [isPending, setIsPending] = useState(false);
     const [error, setError] = useState(false); 
     const [org, setOrg] = useState('organizationsdetails');
-    const [loading, setLoading] = useState(false);
+    const [loading ] = useState(false);
     const [currentPage, setCurrentPage] = useState(0);
     const [postsPerPage] = useState(3);
         // Get current
-    const indexOfLastPost = currentPage * postsPerPage;
+    // const indexOfLastPost = currentPage * postsPerPage;
     // const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const [currentPosts, setCurrentPost] = useState(data.slice(0+(3*currentPage), 3+(3*currentPage)));
 

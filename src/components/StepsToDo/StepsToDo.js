@@ -38,7 +38,7 @@ export default function StepsToDo() {
     phone: "",
     date: "",
     time: "",
-    comments: ""
+    comment: ""
 })
 
 // const formData = value => {

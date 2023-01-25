@@ -27,7 +27,7 @@ export const useSignup = () => {
           //add display name to user 
           //await res.user.updateProfile({passwordRep})
 
-
+          setIsPending(false);
          //update state
            if (!isCancelled) {
             setIsPending(false);

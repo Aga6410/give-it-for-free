@@ -68,7 +68,7 @@ export default function Step4({ formData, setFormData }) {
               <label>Comments:</label>
               <textarea type="note"
                name="moreInfo"
-               value={formData.street} 
+               value={formData.comment} 
               onChange= {(e) => 
                 setFormData({ ...formData, comment: e.target.value})
             }

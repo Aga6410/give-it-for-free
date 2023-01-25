@@ -11,7 +11,7 @@ export default function LastStep({ formData }) {
                     <div className="summaryInformation">
                         <div className="summary">
                             <img src={icon1} alt="icon"/><h2>You give:</h2>
-                            <p> Bags: {formData.bag}, things: {formData.typeGive}, who: {formData.whoGive}</p>
+                            <p> Bags: {formData.bag}, things: {formData.typeGive.join(", ")}, who: {formData.whoGive.join(" ")}</p>
                             <img src={icon2} className="iconTwo" alt="icon"/><p>Localization: {formData.localization}  </p>
                         </div>
                         <div className="allColumnSummary">
