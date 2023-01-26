@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function Step4({ formData, setFormData }) {
   return (
     <div className= "fourthStep_container container">

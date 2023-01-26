@@ -42,7 +42,7 @@ const HomeSteps = () => {
             </div>
             <div className='buttonStep'>
             <button className="stepButton">
-                <Link to="/login" style={{ textDecoration: 'none'}}>GIVE AWAY</Link>
+                <Link to="/login" >GIVE AWAY</Link>
             </button>
             </div>
         </section>

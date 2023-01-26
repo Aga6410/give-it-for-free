@@ -125,15 +125,17 @@
         flex-direction: column;
        }
     }
+    .fourthStep{ 
+
     .pickupAddress {
       display: flex;
       justify-content: space-between;
       width: 58.5rem;
-          
-    .column {
-     display: grid;
+
+      .column {
+      display: grid;
       justify-content: flex-start;
-      grid-template-columns: auto minmax(auto, 16rem);
+      // grid-template-columns: auto minmax(auto, 16rem);
       gap: 1rem 0.5rem;
       }
         
@@ -161,8 +163,9 @@
           background-color: #EFEDE9;
           height: 2.5rem;
         }
-  
     }
+  }
+
     .lastInfo {
       padding-left: 8.9rem;
       background-color: #EBEAE8;
@@ -272,3 +275,42 @@ label {
 }
 
 
+
+
+// .pickupAddress {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 58.5rem;
+
+//   .column {
+//   display: grid;
+//   justify-content: flex-start;
+//   grid-template-columns: auto minmax(auto, 16rem);
+//   gap: 1rem 0.5rem;
+//   }
+    
+//     label {
+//       font-size: 1.5rem;
+//     }
+//     p {
+//       margin-right: 1rem;
+//       outline: 0;
+//     }
+//     h2 {
+//       margin: 0.5rem 1rem 2rem 0;
+//       text-align: left;
+//       font-weight: bold;
+//       font-size: 1.5rem;
+//     }
+//     input {
+//       margin-bottom: 1rem;
+//       background-color: #EFEDE9;
+//       height: 2.5rem;
+//       align-items: right;
+//     }
+//     textarea {
+//       resize: none;
+//       background-color: #EFEDE9;
+//       height: 2.5rem;
+//     }
+// }

@@ -56,9 +56,15 @@
     border-radius: 0.75px solid $black;
     font-size: 36px;
     padding: 13px 93px;
+    text-decoration: none;
+    background-color: $white;
+    &:hover {
+      cursor: pointer;
+    }
   }
   a { 
     color: $black; 
+    text-decoration: none;
   }
 }
        
