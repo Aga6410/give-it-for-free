@@ -10,7 +10,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     }
     console.log({totalPosts,tempTab, postsPerPage});
     setPageNumbers(tempTab);
-  }, [totalPosts]) 
+  }, [totalPosts, postsPerPage]) 
 
 
   return (
