@@ -41,32 +41,24 @@ export default function StepsToDo() {
     comment: ""
 })
 
-// const formData = value => {
-//   setFormData(prev => ({
-//       ...prev,
-//       ...value
-//   }))
-// }
-
   return (
     <div className= "StepsToDo_container container">
-    
       <div>{PageDisplay()}</div>
         <div className='buttonsBackNext'>
           <button 
+          hidden={page === 5}
           disabled={page === 0}
           onClick = {() => {
             setPage((currPage) => currPage - 1);
           }}
           >Back</button>      
           <button 
-          
+          hidden={page === 5}
           onClick = {() => {
             setPage((currPage) => currPage + 1);
           }}
           >
-            {page === 4 ? "Submit" : "Next"}
-            {/* {page === 5 ? style.display:none : display:none} */}
+            {page === 4 ? "Submit" : "Next"} 
           </button>
         </div> 
     </div>

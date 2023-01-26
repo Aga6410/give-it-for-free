@@ -28,7 +28,7 @@ export default function Step3({ formData, setFormData }) {
     }
 
   return (
-    <div className= "StepsToDo_container container">
+    <div className= "thirdStep_container container">
        <div className="importantInformation">
           <h1>Important!</h1>
           <p>If you want who you want to help you can choose it below. Moreover you can filter the organisations using localisation or aim of help.</p>

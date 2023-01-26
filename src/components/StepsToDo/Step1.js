@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 
 export default function Step1({ formData, setFormData }) {
@@ -29,7 +29,7 @@ export default function Step1({ formData, setFormData }) {
   }
 
   return (
-    <div className= "StepsToDo_container container">
+    <div className= "firstStep_container container">
       <div className="importantInformation">
         <h1>Important!</h1>
         <p>Fill in the details about your things. Thanks to that we know who we can give them.</p>

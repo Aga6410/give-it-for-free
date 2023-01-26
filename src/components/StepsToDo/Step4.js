@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Step4({ formData, setFormData }) {
   return (
-    <div className= "StepsToDo_container container">
+    <div className= "fourthStep_container container">
        <div className="importantInformation">
           <h1>Important!</h1>
           <p>Fill in the address and date of pickup by courier.</p>

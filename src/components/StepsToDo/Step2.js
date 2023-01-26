@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Step2({ formData, setFormData }) {
   return (
-    <div className= "StepsToDo_container container">
+    <div className= "secondStep_container container">
       <div className="importantInformation">
           <h1>Important!</h1>
           <p>Everything you should pack in 60l bags. Detailled instruction you will find HERE.</p>

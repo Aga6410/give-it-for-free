@@ -4,11 +4,11 @@ import icon2 from '../../assets/Icon-4.svg'
 
 export default function LastStep({ formData }) {
   return (
-    <div className= "StepsToDo_container container">
+    <div className= "lastStep_container container">
       <div className="lastInfo">
                             <h1>Summary of you donation</h1>
                         </div>
-                    <div className="summaryInformation">
+                    <div className="summaryInformation step">
                         <div className="summary">
                             <img src={icon1} alt="icon"/><h2>You give:</h2>
                             <p> Bags: {formData.bag}, things: {formData.typeGive.join(", ")}, who: {formData.whoGive.join(" ")}</p>
