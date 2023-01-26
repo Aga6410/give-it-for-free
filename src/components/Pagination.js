@@ -21,7 +21,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
             <a onClick={(e) => {
               e.preventDefault();
               paginate(number)}} 
-              href='#' 
+              href="foo" 
               className='page-link'>
               {number+1}
             </a>
