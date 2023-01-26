@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    height: 384px;
+    height: 24rem;
     font-weight: 300;
     color: $brown; 
 
@@ -15,8 +15,8 @@
     
 
       h1 {
-        font-size: 90px;
-        margin: 46px 0 10px 0;
+        font-size: 5.6rem;
+        margin: 2.9rem 0 0.6rem 0;
         
       }
       h2 {
@@ -24,11 +24,10 @@
         margin-bottom: 28px;
       }
       p {
-        font-size: 16px;
-        margin-bottom: 86px;
-        line-height: 18px;
-        letter-spacing: -0.32px;
-        width: 334px;
+        font-size: 1rem;
+        margin-bottom: 5.4rem;
+        line-height: 1.2rem;
+        width: 20.9rem;
 
       }
     }

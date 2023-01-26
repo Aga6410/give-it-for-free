@@ -13,7 +13,7 @@ export default function Step4({ formData, setFormData }) {
           <div className="pickupAddress">
             <div className="firstColumn columnAd">
               <h2>Address of pickup:</h2>
-              <div className="column">
+              {/* <div className="column"> */}
               <label>Street:</label>
               <input type="text" 
               name="street" 
@@ -45,10 +45,10 @@ export default function Step4({ formData, setFormData }) {
             }
               />
               </div>
-            </div>
+            {/* </div> */}
             <div className="secondColumn columnAd">
               <h2>Date of pickup:</h2>
-              <div className="column">
+              {/* <div className="column"> */}
               <label>Date:</label>
               <input type="date" 
               name="date"
@@ -72,7 +72,7 @@ export default function Step4({ formData, setFormData }) {
                 setFormData({ ...formData, comment: e.target.value})
             }
                />
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
