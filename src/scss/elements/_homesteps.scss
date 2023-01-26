@@ -32,15 +32,15 @@
     .line {
       margin: 12px auto;
       background-color: $black;
-      width: 70px;
-      height: 1px;
+      width: 4.4rem;
+      height: 0.06rem;
     }
     img {
-      margin: 73px 0 8px 0;;
+      margin: 4.6rem 0 0.5rem 0;;
     }
     p {
-        font-size: 16px;
-        line-height: 10px;
+        font-size: 1rem;
+        line-height: 0.6rem;
         text-align: center;
     }
   }
@@ -50,12 +50,12 @@
     
     .stepButton {
     text-align: center;
-    margin-top: 48px;
-    height: 120px;
-    width: 310px;
-    border-radius: 0.75px solid $black;
-    font-size: 36px;
-    padding: 13px 93px;
+    margin-top: 3rem;
+    height: 7.5rem;
+    width: 19.4rem;
+    border-radius: 0.05rem solid $black;
+    font-size: 2.2rem;
+    padding: 0.8rem 5.8rem;
     text-decoration: none;
     background-color: $white;
     &:hover {

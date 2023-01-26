@@ -5,7 +5,7 @@
 .header_nav1 {
     text-align: right;
     margin-top: 1rem;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: $black;
     a {
       margin-right: 1.5rem;
@@ -36,7 +36,7 @@
         font-weight: lighter;
       }
       .greatings_words {
-        margin-right: 15px;;
+        margin-right: 0.9rem;
       }
     }
   }
@@ -44,7 +44,7 @@
   .header_nav2 {
     text-align: left;
     margin-top: 1rem;
-    font-size: 18px;
+    font-size: 1.1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -65,13 +65,11 @@
   .introduction {
     text-align: center;
     margin: 19rem 1rem 0 0;
-    // @media (max-width: 1400px) {
-    //   margin: 10rem 1rem 0 0;
-    // }
+  
     h1 {
       font-size: 2rem;
       color: #3C3C3C;
-      line-height: 55px;
+      line-height: 3.4rem;
     } 
     img {
       margin: 2rem 0 4rem 0;
@@ -82,18 +80,18 @@
         justify-content: space-around;
         
        button {
-        height:120px;
-        width:310px;
+        height: 7.5rem;
+        width: 19.4rem;
         background-color: $white;
-        font-size: 36px;
+        font-size: 2.3rem;
         font-weight: lighter;
         color: $black;
        }
        .firstButton {
-        margin-left: 100px;
+        margin-left: 6.2rem;
        }
        .secondButton {
-        margin-right: 100px;
+        margin-right: 6.2rem;
        }
     }
 }
