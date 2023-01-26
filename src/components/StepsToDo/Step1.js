@@ -34,7 +34,7 @@ export default function Step1({ formData, setFormData }) {
         <h1>Important!</h1>
         <p>Fill in the details about your things. Thanks to that we know who we can give them.</p>
       </div>
-        <div className="firstStep step">
+      <div className="firstStep step">
           <p>Step 1/4</p>
           <h1>Choose what you would like to give away:</h1>
           <div className='formula'>
@@ -63,7 +63,7 @@ export default function Step1({ formData, setFormData }) {
               <span>others</span> 
             </label>
           </div>           
-        </div> 
+      </div> 
     </div>
   )
 }

@@ -1,0 +1,45 @@
+.secondStep_container {
+    font-size:1.5rem;
+    margin-bottom: 15rem;
+
+    .importantInformation {
+        background-color: $yellow;
+        height: 11.1rem;
+        h1 {
+          font-size: 2.2rem;
+          font-weight: bold;
+          padding: 3rem 0 0 8.8rem;
+        }
+        p {
+          padding: 1rem 0 2rem 8.8rem;
+          font-size: 1.4rem;
+          color: $black;
+        }
+      }
+      .step {
+        padding: 1rem 0 8rem 8.8rem;
+       
+        p {
+          margin: 1rem 0 4.3rem 0;
+          font-weight: lighter;
+          font-size: 1.5rem;
+        }
+        h1 {
+          font-size: 2.25rem;
+          font-weight: bold;
+          margin-bottom: 2.3rem;
+        }
+        
+        label {
+            padding-right: 1rem;
+        }
+        select {
+          font-size: 1.5rem;
+          width: 15rem;
+          text-align: center;
+          border: 1px solid black;
+          padding: 0.5rem 1rem;
+          background-color: #EFEDE9;
+        }
+    }
+}

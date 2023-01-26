@@ -4,31 +4,31 @@
     justify-content: center;
 
     .leftSideAboutUs {
-      width: 958px;
-      height: 935px;
+      width: 59.9rem;
+      height: 58.4rem;
       background-color: $white;
       h1 {
-        font-size: 38px;
-        margin: 186px 0 40px 0;
+        font-size: 2.4rem;
+        margin: 11.6rem 0 2.5rem 0;
       }
       img {
-        margin-bottom: 55px;
+        margin-bottom: 3.4rem;
       }
       p {
         width: 60%;
-        font-size: 30px;
+        font-size: 1.9rem;
         margin: 0 auto;
-        line-height: 54px;
+        line-height: 3.4rem;
       }
       .signatureImage {
-        width: 209px;
-        margin: 40px 152px 185px 596px;
+        width: 13rem;
+        margin: 2.5rem 9.5rem 13.1rem 37.2rem;
       }
     }
     .rightSideAboutUs {
       background-image: url("../../assets/People.jpg");
-      width: 958px;
-      height: 935px;
+      width: 59.9rem;
+      height: 58.4rem;
       background-size: cover;
     }
   }

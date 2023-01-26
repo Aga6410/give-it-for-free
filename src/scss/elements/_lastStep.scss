@@ -1,0 +1,49 @@
+.lastStep_container {
+    .lastInfo {
+        padding-left: 8.9rem;
+        background-color: #EBEAE8;
+  
+       
+        h1 {
+          font-size: 2.2rem;
+          font-weight: bold;
+          padding: 3rem 0 3rem 0rem;
+        }
+        p {
+          padding: 1rem 0 2rem 5rem;
+        }
+      }
+  
+  .summaryInformation {
+    margin-left: 8.9rem;
+    h2 {
+      margin: 0.5rem 1rem 2rem 0rem;
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    p{
+      margin: 0 0 2rem 0rem;
+      font-size: 1.2rem;
+    }
+    img {
+      width: 2rem;
+      position: relative;
+      top: 5rem;
+      left: - 3rem;
+    }
+    .iconTwo {
+      width: 2rem;
+      position: relative;
+      top: 1.5rem;
+      left: -3rem;
+    }
+  
+    .allColumnSummary{
+      display: flex;
+      justify-content: space-between;
+        width: 30rem;
+    }
+}
+    
+}
