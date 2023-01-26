@@ -1,11 +1,11 @@
 import React from 'react';
-import facebook from "../assets/Facebook.svg";
-import instagram from "../assets/Instagram.svg";
+import facebook from "../../assets/Facebook.svg";
+import instagram from "../../assets/Instagram.svg";
 
 const HomeFooter = () => {
     return (
       <footer className='footer_container container'>
-         <span>Copyright by Coders Lab</span>
+         <span>Copyright by CL</span>
          <div className='socialmedia'>
           <div className='facebook'>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="facebook" style={{width:30, height:30}}/></a>

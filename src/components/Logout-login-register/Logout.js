@@ -1,7 +1,7 @@
 import React from "react";
 import decoration from "../../assets/Decoration.svg"
 import {Link} from "react-router-dom";
-import HomeHeader from "../HomeHeader";
+import HomeHeader from "../Header/HomeHeader";
 
 export default function LogOut() {
 

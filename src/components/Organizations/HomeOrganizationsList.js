@@ -1,9 +1,9 @@
 import React from 'react';
-import { projectFirestore } from "../Firebase/config";
+import { projectFirestore } from "../../Firebase/config";
 import { useEffect, useState } from 'react';
 import Posts from './PaginationPosts';
 import Pagination from './Pagination';
-import decoration from "../assets/Decoration.svg"
+import decoration from "../../assets/Decoration.svg"
 
  const HomeOrganizationsList = () => {
     const [data, setData]= useState([]);

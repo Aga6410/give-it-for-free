@@ -4,9 +4,9 @@ import  { useAuthContext } from './Hooks/useAuthContext';
 
 //components
 import Home from './components/Home';
-import Register from './components/Register';
-import Login from './components/Login';
-import Logout from "./components/Logout/Logout"
+import Register from './components/Logout-login-register/Register';
+import Login from './components/Logout-login-register/Login';
+import Logout from "./components/Logout-login-register/Logout"
 import FormAfterLogin from './components/FormAfterLogin/FormAfterLogin';
 import "./scss/main.scss";
 

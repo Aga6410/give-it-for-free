@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import decoration from "../assets/Decoration.svg";
+import decoration from "../../assets/Decoration.svg";
 
 function HomeContact() {
   const [form, setForm] = useState({

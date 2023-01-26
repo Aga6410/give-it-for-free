@@ -1,6 +1,6 @@
 // import React from 'react'
-// import HomeHeader from './HomeHeader';
-// import decoration from "../assets/Decoration.svg";
+// import HomeHeader from './Header/HomeHeader';
+// import decoration from "../../assets/Decoration.svg";
 // import {Link} from "react-router-dom";
 // import {useState} from 'react';
 // import { useSignup } from '../Hooks/useSignup'
@@ -137,11 +137,11 @@
 // export default Register;
 
 import React from 'react'
-import HomeHeader from './HomeHeader';
-import decoration from "../assets/Decoration.svg";
+import HomeHeader from '../Header/HomeHeader';
+import decoration from "../../assets/Decoration.svg";
 import {Link} from "react-router-dom";
 import {useState} from 'react';
-import { useSignup } from '../Hooks/useSignup'
+import { useSignup } from '../../Hooks/useSignup'
 
 
 const Register = () => {

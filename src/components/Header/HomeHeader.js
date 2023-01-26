@@ -2,8 +2,8 @@ import React from 'react';
 import HomeReactScroll from "./HomeReactScroll";
 import HomeReactRouter from './HomeReactRouter';
 import {Link} from "react-router-dom";
-import { useLogout } from '../Hooks/useLogout';
-import { useAuthContext } from '../Hooks/useAuthContext';
+import { useLogout } from '../../Hooks/useLogout';
+import { useAuthContext } from '../../Hooks/useAuthContext';
 
 const HomeHeader = () => {
     const { logout } = useLogout();
@@ -18,7 +18,6 @@ const HomeHeader = () => {
                         <HomeReactRouter/>
                         </>
                      )}
-                   
                    {user && (
                     <div className='greatings_logout_buttons'>
                       <li className='greatings_words'>Hello, {user.email}!</li>

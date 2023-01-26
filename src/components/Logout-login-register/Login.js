@@ -1,7 +1,7 @@
 // import React from 'react'
-// import HomeHeader from './HomeHeader';
+// import HomeHeader from './Header/HomeHeader';
 // import {Link} from "react-router-dom";
-// import decoration from "../assets/Decoration.svg"
+// import decoration from "../../assets/Decoration.svg"
 // import {useState} from 'react';
 // import { useLogin } from '../Hooks/useLogin';
 
@@ -117,11 +117,11 @@
 
 
 import React from 'react'
-import HomeHeader from './HomeHeader';
+import HomeHeader from '../Header/HomeHeader';
 import {Link} from "react-router-dom";
-import decoration from "../assets/Decoration.svg"
+import decoration from "../../assets/Decoration.svg"
 import {useState} from 'react';
-import { useLogin } from '../Hooks/useLogin';
+import { useLogin } from '../../Hooks/useLogin';
 
 const Login = () => {
   const [email, setEmail] = useState('');
