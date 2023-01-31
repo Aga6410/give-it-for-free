@@ -6,7 +6,7 @@ Website for people who want to give their unused things the other people in need
 Clone the source repository from Github. On the command line enter:
 
 ```
-git clone 
+git clone https://github.com/Aga6410/give-it-for-free.git
 ```
 
 Project setup:
