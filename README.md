@@ -21,7 +21,7 @@ Project run:
 npm start
 ```
 
-##Built with:
+## Built with:
 * React.js
 * React Router, React Scroll
 * SASS
